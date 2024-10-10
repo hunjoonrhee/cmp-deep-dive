@@ -1,4 +1,6 @@
 import {
+  afterNextRender,
+  afterRender,
   AfterViewInit,
   Component,
   ElementRef,
@@ -21,6 +23,16 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
   // private form = viewChild.required<ElementRef<HTMLFormElement>>('form');
+
+  // constructor() {
+  //   afterRender(() => {
+  //     console.log('afterRender');
+  //   });
+
+  //   afterNextRender(() => {
+  //     console.log('after next render');
+  //   });
+  // }
 
   ngOnInit() {
     console.log('ON INIT');
